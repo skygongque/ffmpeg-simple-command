@@ -21,10 +21,13 @@
 （一张名为image.jpg的图片和一段名为audio.mp3音频合成名为video.mp4的视频）
 在终端运行目录需要image.jpg，audio.mp3即可合成video.mp4
 核心代码：
+
 '''
 
 ffmpeg -loop 1 -i image.jpg -i audio.mp3 -c:a copy -c:v libx264 -shortest video.mp4
+
 '''
+
 ## 其他
 1.从pdf中提取文字时使用正则表达式
 
