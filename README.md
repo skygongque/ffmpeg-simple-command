@@ -1,5 +1,22 @@
 # useful command
 
+
+## 格式转换
+
+m4a转mp3
+------
+`
+ffmpeg -i input.m4a output.mp3
+`
+
+mkv转mp4
+------
+`
+ffmpeg -i input.m4a output.mp3
+`
+注意：在不指定参数的情况下所有参数都会使用默认值
+
+
 ## 一张图和一段音频生成视频
 
 `
@@ -29,7 +46,7 @@ ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
 
 
 
-
+## 例子
 
 ## get_englishpod_video
 #### Get englishpod video using pdf and audio. (一张图和一段音频生成视频的实例)
