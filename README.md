@@ -51,6 +51,7 @@ ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
 
 [get_englishpod_video](https://github.com/skygongque/ffmpeg-simple-command/blob/master/get_englishpod_video_intruduction)
 ----
+结果发布于B站：https://www.bilibili.com/video/BV1eE411a7Cm
 
 
 
