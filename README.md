@@ -1,3 +1,11 @@
+### useful command
+
+###### 一张图和一段音频生成视频
+`
+ffmpeg -loop 1 -i image.jpg -i audio.mp3 -c:a copy -c:v libx264 -shortest video.mp4
+`
+
+
 
 
 ## get_englishpod_video
