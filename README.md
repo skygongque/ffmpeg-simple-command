@@ -49,7 +49,7 @@ ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
 
 ## 例子
 
-[get_englishpod_video](https://github.com/skygongque/ffmpeg-simple-command/blob/master/get_englishpod_video_intruduction)
+[get_englishpod_video 一张图和一段音频生成视频的实例](https://github.com/skygongque/ffmpeg-simple-command/blob/master/get_englishpod_video_intruduction)
 ----
 结果发布于B站：https://www.bilibili.com/video/BV1eE411a7Cm
 
