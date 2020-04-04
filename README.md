@@ -6,7 +6,7 @@
 ffmpeg -loop 1 -i image.jpg -i audio.mp3 -c:a copy -c:v libx264 -shortest video.mp4
 `
 
-压制硬字幕
+#### 压制硬字幕
 
 `
 ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
