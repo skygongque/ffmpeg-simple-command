@@ -9,9 +9,9 @@ ffmpeg -loop 1 -i image.jpg -i audio.mp3 -c:a copy -c:v libx264 -shortest video.
 压制硬字幕
 
 `
-ffmpeg -i input.mp4 -filter_complex "subtitles=subtitleName.ass:force_style='PrimaryColour=&H000000,BackColour=&Hffffff,OutlineColour=&Hffffff,BorderStyle=4,Outline=1,Shadow=0,Bold=0,MarginV=30'" output.mp4
+ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
 `
-
+OPTION传一个字符串如"subtitles=subtitleName.ass:force_style='PrimaryColour=&H000000,BackColour=&Hffffff,OutlineColour=&Hffffff,BorderStyle=4,Outline=1,Shadow=0,Bold=0,MarginV=30'"
 
 ## get_englishpod_video
 #### Get englishpod video using pdf and audio. (一张图和一段音频生成视频的实例)
