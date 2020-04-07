@@ -33,6 +33,7 @@ ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
 
 如"subtitles=subtitleName.ass:force_style='PrimaryColour=&H000000,BackColour=&Hffffff,OutlineColour=&Hffffff,BorderStyle=4,Outline=1,Shadow=0,Bold=0,MarginV=30'"
 
+
 ##### OPTION参数解释
 
 |Name|explanation|example|
@@ -44,8 +45,24 @@ ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
 | BorderStyle|与底部距离|30|
 
 
+## 下载线上m3u8视频并转MP4
 
+`
+ffmpeg -protocol_whitelist "file,http,https,tcp,tls" -i index.m3u8 -acodec copy -vcodec copy out.mp4
+`
 
+|parameter|explanation|
+| :------------ |:------------|
+|index.m3u8|m3u8索引文件|
+|protocol_whitelist|请求方式白名单|
+|acodec|音频编码|
+|vcodec|视频编码|
+
+#### -protocol_whitelist "file,http,https,tcp,tls" 的添加可解决如下报错
+
+`
+Protocol 'http' not on whitelist 'file,crypto'!
+`
 
 ## 例子
 
