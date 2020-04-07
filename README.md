@@ -12,7 +12,7 @@ ffmpeg -i input.m4a output.mp3
 mkv转mp4
 ------
 `
-ffmpeg -i input.m4a output.mp3
+ffmpeg -i input.m4a output.mp4
 `
 
 注意：在不指定参数的情况下所有参数都会使用默认值
