@@ -44,6 +44,9 @@ ffmpeg -i input.mp4 -filter_complex OPTION output.mp4
 | BorderStyle|边框样式|4:不透明3:透明边框|
 | BorderStyle|与底部距离|30|
 
+`
+order = 'ffmpeg -i "{}"  -filter_complex "subtitles={}:force_style=\'PrimaryColour=&Hffffff,BackColour=&Hffffff,OutlineColour=&H000000,BorderStyle=2,Outline=1,Shadow=0,Bold=0,MarginV=15\'" "{}"'.format(input,subtitle_name,output)
+`
 
 ## 下载线上m3u8视频并转MP4
 
